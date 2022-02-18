@@ -7,11 +7,11 @@ export function CrossedWires(firstLine: string, secondLine: string): number {
         const x = parseInt(element.split(',')[0])
         const y = parseInt(element.split(',')[1])
         const dist = ManhattanDistance(0, 0, x, y)
+
         if (dist < lowestDistance){
             lowestDistance = dist
         } 
     });
-    console.log('intesections', intersections)
     return lowestDistance
 }
 
